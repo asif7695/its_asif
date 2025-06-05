@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <!-- Blog Site Project Section -->
+    <section id="blogsite" class="project-detail">
+        <div class="container">
+            <div class="section-title">
+                <h2>Blog Site Project</h2>
+                <p>My first full-stack web application</p>
+            </div>
+
+            <!-- Project Overview -->
+            <div class="project-overview">
+                <h3>Overview</h3>
+                <p>
+                    The Blog Site is a full-stack web application built with Flask, marking my first venture into full-stack development. This project allows users to create accounts, log in, post blogs, edit or delete their posts, and search for content. It features user authentication, a SQLite database for data persistence, and a rich text editor for creating blog posts. The project helped me understand Flask, SQLAlchemy, user authentication, file uploads, and front-end integration with Bootstrap and CKEditor.
+                </p>
+            </div>
+
+            <!-- Project Image -->
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='image/blog.png') }}" alt="Blog Site Screenshot" />
+            </div>
+
+
+            <!-- Project Details -->
+            <div class="project-details">
+                <h3>Features</h3>
+                <ul>
+                    <li>User registration and login with password hashing for security.</li>
+                    <li>Create, edit, and delete blog posts with a rich text editor (CKEditor).</li>
+                    <li>Search functionality to find posts by content.</li>
+                    <li>User profile management, including profile picture uploads.</li>
+                    <li>Admin dashboard for managing users and posts (restricted to admin users).</li>
+                    <li>Responsive design using Bootstrap for a seamless user experience.</li>
+                    <li>Database management with SQLite and SQLAlchemy for storing users and posts.</li>
+                </ul>
+
+                <h3>Technologies Used</h3>
+                <div class="project-tags">
+                    <span class="project-tag">Flask</span>
+                    <span class="project-tag">SQLite</span>
+                    <span class="project-tag">Jinja2</span>
+                    <span class="project-tag">Node.js</span>
+                    <span class="project-tag">SQLAlchemy</span>
+                    <span class="project-tag">Bootstrap</span>
+                    <span class="project-tag">CKEditor</span>
+                </div>
+
+            </div>
+
+            <!-- Project Links -->
+            <div class="project-links2">
+                <a href="#" class="btn btn-primary" title="View Demo">View Demo</a>
+                <a href="https://github.com/asif7695/flask_try2" class="btn btn-outline" title="GitHub Repository">View Code on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

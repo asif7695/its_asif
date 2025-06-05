@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <!-- Pookie Bot Project Section -->
+    <section id="pookiebot" class="project-detail">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pookie Bot Project</h2>
+                <p>A simple Telegram bot built with Python</p>
+            </div>
+
+            <!-- Project Overview -->
+            <div class="project-overview">
+                <h3>Overview</h3>
+                <p>
+                    Pookie Bot is a Telegram bot I created out of curiosity to explore how bots work on the Telegram platform. Built using Python and the python-telegram-bot library, this bot responds to basic commands like <code>/start</code>, <code>/help</code>, <code>/about</code>, and <code>/contact</code>. It was my first experiment with building a bot, and I aim to enhance it in the future to include AI-driven chat capabilities. This project helped me learn about asynchronous programming, environment variable management, and integrating with Telegram’s API.
+                </p>
+            </div>
+
+            <!-- Project Image -->
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='image/telebot.png') }}" alt="Pookie Bot Screenshot" />
+            </div>
+
+            <!-- Project Details -->
+            <div class="project-details">
+                <h3>Features</h3>
+                <ul>
+                    <li>Responds to basic commands: <code>/start</code>, <code>/help</code>, <code>/about</code>, and <code>/contact</code>.</li>
+                    <li>Provides information about the bot and its developer.</li>
+                    <li>Uses environment variables (via python-dotenv) for secure token management.</li>
+                    <li>Built with asynchronous handlers for efficient command processing.</li>
+                    <li>Simple and lightweight design, ideal for learning bot development.</li>
+                </ul>
+
+                <h3>Technologies Used</h3>
+                <div class="project-tags">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">Telegram</span>
+                    <span class="project-tag">Python-dotenv</span>
+                    <span class="project-tag">python-telegram-bot</span>
+                </div>
+
+
+            </div>
+
+            <!-- Project Links -->
+            <div class="project-links2">
+                <a href="#" class="btn btn-primary" title="View Demo">View Demo</a>
+                <a href="https://github.com/asif7695/python_projects/blob/main/telegram_bot/telegram_bot.py" class="btn btn-outline" title="GitHub Repository">View Code on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

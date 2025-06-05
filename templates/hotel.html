@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <!-- Hotel Room Management System Project Section -->
+    <section id="hotel_management" class="project-detail">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hotel Room Management System</h2>
+                <p>A console-based system for managing hotel rooms and bookings</p>
+            </div>
+
+            <!-- Project Overview -->
+            <div class="project-overview">
+                <h3>Overview</h3>
+                <p>
+                    The Hotel Room Management System is a C-based console application designed to manage hotel room statuses and user bookings. It allows admins to add, update, and delete rooms, while users can book available rooms and manage their reservations. Built as a learning project, it utilizes linked lists for data management and file I/O for persistence. Future enhancements could include a GUI interface or online booking capabilities.
+                </p>
+            </div>
+
+            <!-- Project Image -->
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='image/hotel.png') }}" alt="Hotel Room Management System Screenshot" />
+            </div>
+
+            <!-- Project Details -->
+            <div class="project-details">
+                <h3>Features</h3>
+                <ul>
+                    <li>Admin login to manage room operations (add, update, delete).</li>
+                    <li>User login and registration for booking rooms.</li>
+                    <li>View available rooms and book them with a specified date.</li>
+                    <li>Manage reservations, including cancellation and viewing history.</li>
+                    <li>Data persistence using text files (rooms.txt, users.txt, reservations.txt).</li>
+                    <li>Color-coded console interface for better user experience.</li>
+                </ul>
+
+                <h3>Technologies Used</h3>
+                <div class="project-tags">
+                    <span class="project-tag">C/C++</span>
+                    <span class="project-tag">Linked Lists</span>
+                    <span class="project-tag">File I/O</span>
+                    <span class="project-tag">Console Application</span>
+                </div>
+            </div>
+
+            <!-- Project Links -->
+            <div class="project-links2">
+                <a href="#" class="btn btn-primary" title="View Demo">View Demo</a>
+                <a href="https://github.com/asif7695/python_projects/blob/main/hangman.py" class="btn btn-outline" title="GitHub Repository">View Code on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

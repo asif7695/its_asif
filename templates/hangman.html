@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <!-- Hangman Project Section -->
+    <section id="hangman" class="project-detail">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hangman Project</h2>
+                <p>A beginner-friendly Python game</p>
+            </div>
+
+            <!-- Project Overview -->
+            <div class="project-overview">
+                <h3>Overview</h3>
+                <p>
+                    Hangman is a classic word-guessing game that I built as one of my first Python projects to solidify my understanding of basic programming concepts. The goal was to create an engaging, interactive console-based game where players guess letters to complete a hidden word within a limited number of attempts. This project helped me grasp fundamental Python skills like string manipulation, loops, conditionals, and user input handling.
+                </p>
+            </div>
+
+            <!-- Project Image -->
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='image/hangman.png') }}" width='10' alt="Hangman Game Screenshot" />
+            </div>
+
+            <!-- Project Details -->
+            <div class="project-details">
+                <h3>Features</h3>
+                <ul>
+                    <li>Random word selection from a predefined list.</li>
+                    <li>Interactive console interface for letter guesses.</li>
+                    <li>Visual representation of the hangman using ASCII art.</li>
+                    <li>Tracking of remaining attempts and guessed letters.</li>
+                    <li>Win/lose conditions with feedback messages.</li>
+                </ul>
+
+                <h3>Technologies Used</h3>
+                <div class="project-tags">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">Random Module</span>
+                    <span class="project-tag">Console Application</span>
+
+                </div>
+
+
+            </div>
+
+            <!-- Project Links -->
+            <div class="project-links2">
+                <a href="#" class="btn btn-primary" title="View Demo">View Demo</a>
+                <a href="https://github.com/asif7695/python_projects/blob/main/hangman.py" class="btn btn-outline" title="GitHub Repository">View Code on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

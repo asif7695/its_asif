@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-info">
+                    <p>
+                        Hello! I'm <span class="name">Asif</span>, a Computer Science & Engineering student, turning code into coffee with a passion for creating intelligent, data-driven solutions that make a difference. My tech journey began from 2024 and it's ongoing.
+                    </p>
+                    <p>
+                        I'm constantly expanding my knowledge and skills through coursework, personal projects. I thrive in environments where I can apply theoretical concepts to real-world problems. My core interests lie in Machine Learning algorithms, Natural Language Processing, and creating seamless user experiences through full-stack development.
+
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-text">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1+</div>
+                            <div class="stat-text">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-text">Contest attended</div>
+                        </div>
+                    </div><br/>
+                    <p>Fun fact: I love  🎮video games  |  ⛩️animes  |  🎞️movies  | 🎥web series.</p>
+
+                </div>
+                <div class="about-image">
+                    <img src="{{ url_for('static',filename='image/asippa.jpg')}}" alt="ASIF" >
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

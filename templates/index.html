@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-wrapper">
+                <!-- Your Image -->
+                <div class="hero-image">
+                    <img src="{{ url_for('static', filename='image/asippa3.jpg') }}" alt="Md. Asifur Rahman Asif" class="personal-image" />
+                </div>
+                <!-- Hero Content -->
+                <div class="hero-content">
+                    <div class="hero-tagline">Computer Science & Engineering Student</div>
+                    <h1 class="hero-title">Md. Asifur Rahman Asif</h1>
+                    <p class="hero-description">
+                        💻 ML enthusiast | 💾 Data whisperer | 🛠️ App dev in progress | 🦉night owl coder by choice | Always learning, always curious 🚀              </p><br/><br/>
+                    <div class="hero-btns">
+                        <a href="{{ url_for('projects') }}" class="btn btn-primary">View My Work</a>
+                        <a href="{{ url_for('contact') }}" class="btn btn-outline">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Animated Element -->
+            <div class="hero-animation">
+                <div class="code-snippets">
+                    <span class="code-snippet" style="--i: 1;">print("Hello World!")</span>
+                    <span class="code-snippet" style="--i: 2;">&lt;/></span>
+                    <span class="code-snippet" style="--i: 3;">def innovate()</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shape"></div>
+    </section>
+
+{% endblock %}
