@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <!-- Valorant Highlights Section -->
+    <section id="highlights" class="highlights-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Valorant Highlights</h2>
+                <p>My best moments and progress in competitive gaming</p>
+            </div>
+
+            <!-- Highlights Grid -->
+            <div class="highlights-grid">
+                <!-- Highlight 1: Clutch Moment -->
+                <div class="highlight-item">
+                    <div class="highlight-image">
+                        <img src="{{ url_for('static', filename='image/valorant_clutch.jpg') }}" alt="Valorant Clutch" />
+                    </div>
+                    <div class="highlight-content">
+                        <h4>1v3 Clutch</h4>
+                        <p>A tense 1v3 clutch to win the round, showcasing my aim improvement.</p>
+                        <a href="https://www.youtube.com/watch?v=example1" class="btn btn-outline" target="_blank">Watch Clip</a>
+                    </div>
+                </div>
+                <!-- Highlight 2: Ace -->
+                <div class="highlight-item">
+                    <div class="highlight-image">
+                        <img src="{{ url_for('static', filename='image/valorant_ace.jpg') }}" alt="Valorant Ace" />
+                    </div>
+                    <div class="highlight-content">
+                        <h4>Full Ace</h4>
+                        <p>A rare ace with the Operator, highlighting my strategic positioning.</p>
+                        <a href="https://www.youtube.com/watch?v=example2" class="btn btn-outline" target="_blank">Watch Clip</a>
+                    </div>
+                </div>
+                <!-- Highlight 3: Team Play -->
+                <div class="highlight-item">
+                    <div class="highlight-image">
+                        <img src="{{ url_for('static', filename='image/valorant_teamplay.jpg') }}" alt="Valorant Team Play" />
+                    </div>
+                    <div class="highlight-content">
+                        <h4>Team Coordination</h4>
+                        <p>A successful team play moment that secured the match victory.</p>
+                        <a href="https://www.youtube.com/watch?v=example3" class="btn btn-outline" target="_blank">Watch Clip</a>
+                    </div>
+                </div>
+                <!-- Highlight 4: Stats Snapshot -->
+                <div class="highlight-item">
+                    <div class="highlight-image">
+                        <img src="{{ url_for('static', filename='image/valorant_stats.jpg') }}" alt="Valorant Stats" />
+                    </div>
+                    <div class="highlight-content">
+                        <h4>Skill Progress</h4>
+                        <p>A snapshot of my stats, reflecting my 70% skill level growth.</p>
+                        <a href="#" class="btn btn-outline">View Stats</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

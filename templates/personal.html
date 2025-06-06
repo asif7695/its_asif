@@ -14,16 +14,16 @@
                 <h3>Favorite Quotes</h3>
                 <div class="quotes-grid">
                     <div class="quote-card">
-                        <p class="quote-text">"The world is beautiful when we help each other." – Nausicaä of the Valley of the Wind</p>
-                        <p class="quote-source">Studio Ghibli</p>
+                        <p class="quote-text">“If you don't take risks, you can't create a future.” –Monkey D. Luffy</p>
+                        <p class="quote-source">One Piece</p>
                     </div>
                     <div class="quote-card">
-                        <p class="quote-text">"Sometimes, the best way to solve your own problems is to help someone else." – Uncle Iroh</p>
-                        <p class="quote-source">Avatar: The Last Airbender</p>
+                        <p class="quote-text">"Your Pain Defines Who You Are, But It No Longer Holds Power Over You." –Noah</p>
+                        <p class="quote-source">Dark</p>
                     </div>
                     <div class="quote-card">
-                        <p class="quote-text">"If you don’t like your destiny, don’t accept it. Instead, have the courage to change it." – Naruto Uzumaki</p>
-                        <p class="quote-source">Naruto</p>
+                        <p class="quote-text">"A Man Can Do What He Wills, But He Cannot Will What He Wills." –Arthur Schopenhauer</p>
+                        <p class="quote-source">German philosopher</p>
                     </div>
                 </div>
             </div>
@@ -35,34 +35,24 @@
                     <!-- Photography -->
                     <div class="hobby-card">
                         <div class="hobby-image">
-                            <img src="{{ url_for('static', filename='image/photography_sample.jpg') }}" alt="Photography Sample" />
+                            <img src="{{ url_for('static', filename='image/3.png') }}" alt="Photography Sample" />
                         </div>
                         <div class="hobby-content">
                             <h4>Photography</h4>
                             <p>I love capturing moments in nature and urban settings. My favorite subjects include landscapes, street photography, and candid portraits.</p>
-                            <a href="#" class="btn btn-outline">View Gallery</a>
+                            <a href="{{ url_for('photography')}}" class="btn btn-outline">View Gallery</a>
                         </div>
                     </div>
-                    <!-- Anime List -->
-                    <div class="hobby-card">
-                        <div class="hobby-image">
-                            <img src="{{ url_for('static', filename='image/anime_sample.jpg') }}" alt="Anime Sample" />
-                        </div>
-                        <div class="hobby-content">
-                            <h4>Anime Favorites</h4>
-                            <p>Anime has been a huge inspiration for me. Here’s a list of my top picks across genres, from Studio Ghibli classics to modern shonen.</p>
-                            <a href="#anime-list" class="btn btn-outline">See My List</a>
-                        </div>
-                    </div>
+
                     <!-- Gaming (Valorant) -->
                     <div class="hobby-card">
                         <div class="hobby-image">
-                            <img src="{{ url_for('static', filename='image/valorant_sample.jpg') }}" alt="Valorant Sample" />
+                            <img src="{{ url_for('static', filename='image/valorant.jpg') }}" alt="Valorant Sample" />
                         </div>
                         <div class="hobby-content">
                             <h4>Gaming: Valorant</h4>
                             <p>I enjoy competitive gaming, especially Valorant. I’m always working on improving my aim and strategy—currently at a 70% skill level!</p>
-                            <a href="#" class="btn btn-outline">View Highlights</a>
+                            <a href="{{ url_for('highlights')}}" class="btn btn-outline">View Highlights</a>
                         </div>
                     </div>
                 </div>
@@ -70,20 +60,20 @@
 
             <!-- Anime List Details (Expanded Section) -->
             <div id="anime-list" class="anime-list-section">
-                <h3>My Top Anime Picks</h3>
+                <h3>My Top Picks</h3>
                 <div class="anime-grid">
                     <div class="anime-card">
                         <div class="anime-image">
-                            <img src="{{ url_for('static', filename='image/spirited_away.jpg') }}" alt="Spirited Away" />
+                            <img src="{{ url_for('static', filename='image/one_piece.avif') }}" alt="Spirited Away" />
                         </div>
                         <div class="anime-content">
-                            <h4>Spirited Away</h4>
-                            <p>A Studio Ghibli masterpiece about courage and growth. The art and storytelling are breathtaking.</p>
+                            <h4>One Piece</h4>
+                            <p>Rubber-bodied dreamer Monkey D. Luffy gathers an eclectic pirate crew and braves the perilous Grand Line, battling tyrants and monsters to claim the legendary "One Piece" and become King of the Pirates.</p>
                         </div>
                     </div>
                     <div class="anime-card">
                         <div class="anime-image">
-                            <img src="{{ url_for('static', filename='image/attack_on_titan.jpg') }}" alt="Attack on Titan" />
+                            <img src="{{ url_for('static', filename='image/attack.jpg') }}" alt="Attack on Titan" />
                         </div>
                         <div class="anime-content">
                             <h4>Attack on Titan</h4>
@@ -92,13 +82,41 @@
                     </div>
                     <div class="anime-card">
                         <div class="anime-image">
-                            <img src="{{ url_for('static', filename='image/demon_slayer.jpg') }}" alt="Demon Slayer" />
+                            <img src="{{ url_for('static', filename='image/dark.jpeg') }}" alt="Demon Slayer" />
                         </div>
                         <div class="anime-content">
-                            <h4>Demon Slayer</h4>
-                            <p>Stunning animation and emotional depth. Tanjiro’s journey is inspiring.</p>
+                            <h4>Dark</h4>
+                            <p>A family saga with a supernatural twist, set in a German town where the disappearance of two young children exposes the relationships among four families.</p>
                         </div>
                     </div>
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="{{ url_for('static', filename='image/intersteller.jpg') }}" alt="Demon Slayer" />
+                        </div>
+                        <div class="anime-content">
+                            <h4>Interstellar</h4>
+                            <p>When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.</p>
+                        </div>
+                    </div>
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="{{ url_for('static', filename='image/bad.jpeg') }}" alt="Demon Slayer" />
+                        </div>
+                        <div class="anime-content">
+                            <h4>Breaking Bad</h4>
+                            <p>A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student to secure his family's future.</p>
+                        </div>
+                    </div>
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="{{ url_for('static', filename='image/john.avif') }}" alt="Demon Slayer" />
+                        </div>
+                        <div class="anime-content">
+                            <h4>John Wick</h4>
+                            <p>John Wick is a former hitman grieving the loss of his true love. When his home is broken into, robbed, and his dog killed, he is forced to return to action to exact revenge.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

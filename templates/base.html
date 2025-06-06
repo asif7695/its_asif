@@ -55,10 +55,35 @@
     {% block content %}
     {% endblock %}
     </div>
-
+    
+    
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
     <!-- JavaScript for Mobile Menu Toggle -->
     <script>
-        
+        document.addEventListener('DOMContentLoaded', function() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.querySelector('.lightbox-image');
+            const lightboxClose = document.querySelector('.lightbox-close');
+
+            document.querySelectorAll('.lightbox-trigger').forEach(trigger => {
+                trigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    lightboxImage.src = this.href;
+                    lightbox.style.display = 'flex';
+                });
+            });
+
+            lightboxClose.addEventListener('click', function() {
+                lightbox.style.display = 'none';
+            });
+
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) {
+                    lightbox.style.display = 'none';
+                }
+            });
+        });
+                
         document.addEventListener('DOMContentLoaded', function () {
             const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
             const mobileMenu = document.querySelector('.mobile-menu');

@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <!-- Photography Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Photography Gallery</h2>
+                <p>A collection of my favorite captures from nature, urban settings, and candid moments</p>
+            </div>
+
+            <!-- Photography Grid -->
+            <div class="gallery-grid">
+                <!-- Nature -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="{{ url_for('static', filename='image/1.png') }}" alt="Nature Sunset" />
+                    </div>
+                    <div class="gallery-content">
+                        <h4>Reflection</h4>
+                    </div>
+                </div>
+                <!-- Urban -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="{{ url_for('static', filename='image/2.png') }}" alt="Urban Street" />
+                    </div>
+                    <div class="gallery-content">
+                        <h4>Crash</h4>
+                    </div>
+                </div>
+                <!-- Landscape -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="{{ url_for('static', filename='image/3.png') }}" alt="Mountain Landscape" />
+                    </div>
+                    <div class="gallery-content">
+                        <h4>Time</h4>
+                    </div>
+                </div>
+                <!-- Street Photography -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="{{ url_for('static', filename='image/4.jpg') }}" alt="Street Vendor" />
+                    </div>
+                    <div class="gallery-content">
+                        <h4>Destination</h4>
+                    </div>
+                </div>
+                <!-- Candid Portrait -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="{{ url_for('static', filename='image/5.jpg') }}" alt="Candid Portrait" />
+                    </div>
+                    <div class="gallery-content">
+                        <h4>Before the Storm</h4>
+                    </div>
+                </div>
+                <!-- Additional Photo -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="{{ url_for('static', filename='image/6.jpg') }}" alt="River in Nature" />
+                    </div>
+                    <div class="gallery-content">
+                        <h4>Exit Loop</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

@@ -11,6 +11,10 @@ def about():
     return render_template("about.html")
 
 
+@app.route('/highlights')
+def highlights():
+    return render_template("highlights.html")
+
 
 @app.route('/personal')
 def personal():
@@ -37,6 +41,11 @@ def index():
 @app.route('/projects')
 def projects():
     return render_template("projects.html")
+
+
+@app.route('/photography')
+def photography():
+    return render_template("photography.html")
 
 @app.route('/skills')
 def skills():
