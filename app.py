@@ -1,6 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,flash,redirect,request,url_for
+from flask_wtf import CSRFProtect
+from webforms import ContactForm
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = "nothing is that secret here"
+csrf = CSRFProtect(app)
 
 @app.route('/about')
 def about():
@@ -8,13 +12,21 @@ def about():
 
 
 
-@app.route('/blog')
-def blog():
-    return render_template("blog.html")
+@app.route('/personal')
+def personal():
+    return render_template("personal.html")
 
-@app.route('/contact')
+
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    return render_template("contact.html")
+    form = ContactForm()
+    if form.validate_on_submit():
+        name = form.name.data
+        email = form.email.data
+        message = form.message.data
+        flash(f'Thank you, {name}! Your message has been received.', 'success')
+        return redirect(url_for('contact'))
+    return render_template("contact.html", form=form)
 
 
 @app.route('/')
@@ -49,6 +61,12 @@ def telebot():
 @app.route('/hotel')
 def hotel():
     return render_template("hotel.html")
+
+@app.route('/resume')
+def resume():
+    return render_template("resume.html")
+
+
 
 
 

@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <!-- Personal Section -->
+    <section id="personal" class="personal-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Personal Corner</h2>
+                <p>A glimpse into my hobbies, passions, and inspirations</p>
+            </div>
+
+            <!-- Favorite Quotes -->
+            <div class="quotes-section">
+                <h3>Favorite Quotes</h3>
+                <div class="quotes-grid">
+                    <div class="quote-card">
+                        <p class="quote-text">"The world is beautiful when we help each other." – Nausicaä of the Valley of the Wind</p>
+                        <p class="quote-source">Studio Ghibli</p>
+                    </div>
+                    <div class="quote-card">
+                        <p class="quote-text">"Sometimes, the best way to solve your own problems is to help someone else." – Uncle Iroh</p>
+                        <p class="quote-source">Avatar: The Last Airbender</p>
+                    </div>
+                    <div class="quote-card">
+                        <p class="quote-text">"If you don’t like your destiny, don’t accept it. Instead, have the courage to change it." – Naruto Uzumaki</p>
+                        <p class="quote-source">Naruto</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hobbies and Personal Projects -->
+            <div class="hobbies-section">
+                <h3>My Hobbies & Personal Projects</h3>
+                <div class="hobbies-grid">
+                    <!-- Photography -->
+                    <div class="hobby-card">
+                        <div class="hobby-image">
+                            <img src="{{ url_for('static', filename='image/photography_sample.jpg') }}" alt="Photography Sample" />
+                        </div>
+                        <div class="hobby-content">
+                            <h4>Photography</h4>
+                            <p>I love capturing moments in nature and urban settings. My favorite subjects include landscapes, street photography, and candid portraits.</p>
+                            <a href="#" class="btn btn-outline">View Gallery</a>
+                        </div>
+                    </div>
+                    <!-- Anime List -->
+                    <div class="hobby-card">
+                        <div class="hobby-image">
+                            <img src="{{ url_for('static', filename='image/anime_sample.jpg') }}" alt="Anime Sample" />
+                        </div>
+                        <div class="hobby-content">
+                            <h4>Anime Favorites</h4>
+                            <p>Anime has been a huge inspiration for me. Here’s a list of my top picks across genres, from Studio Ghibli classics to modern shonen.</p>
+                            <a href="#anime-list" class="btn btn-outline">See My List</a>
+                        </div>
+                    </div>
+                    <!-- Gaming (Valorant) -->
+                    <div class="hobby-card">
+                        <div class="hobby-image">
+                            <img src="{{ url_for('static', filename='image/valorant_sample.jpg') }}" alt="Valorant Sample" />
+                        </div>
+                        <div class="hobby-content">
+                            <h4>Gaming: Valorant</h4>
+                            <p>I enjoy competitive gaming, especially Valorant. I’m always working on improving my aim and strategy—currently at a 70% skill level!</p>
+                            <a href="#" class="btn btn-outline">View Highlights</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anime List Details (Expanded Section) -->
+            <div id="anime-list" class="anime-list-section">
+                <h3>My Top Anime Picks</h3>
+                <div class="anime-grid">
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="{{ url_for('static', filename='image/spirited_away.jpg') }}" alt="Spirited Away" />
+                        </div>
+                        <div class="anime-content">
+                            <h4>Spirited Away</h4>
+                            <p>A Studio Ghibli masterpiece about courage and growth. The art and storytelling are breathtaking.</p>
+                        </div>
+                    </div>
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="{{ url_for('static', filename='image/attack_on_titan.jpg') }}" alt="Attack on Titan" />
+                        </div>
+                        <div class="anime-content">
+                            <h4>Attack on Titan</h4>
+                            <p>An intense story with complex characters and epic battles. The plot twists keep me hooked.</p>
+                        </div>
+                    </div>
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="{{ url_for('static', filename='image/demon_slayer.jpg') }}" alt="Demon Slayer" />
+                        </div>
+                        <div class="anime-content">
+                            <h4>Demon Slayer</h4>
+                            <p>Stunning animation and emotional depth. Tanjiro’s journey is inspiring.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
