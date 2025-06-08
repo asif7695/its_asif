@@ -18,10 +18,9 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <a class="logo">Asif.dev</a>
+            <a href="{{ url_for('index') }}" class="logo">Asif.dev</a>
             <nav>
                 <ul>
-                    <li><a href="{{ url_for('index') }}">Home</a></li>
                     <li><a href="{{ url_for('about') }}">About</a></li>
                     <li><a href="{{ url_for('projects') }}">Projects</a></li>
                     <li><a href="{{ url_for('skills') }}">Skills</a></li>
@@ -41,7 +40,6 @@
             <i class="fas fa-times"></i>
         </button>
         <ul>
-            <li><a href="{{ url_for('index') }}">Home</a></li>
             <li><a href="{{ url_for('about') }}">About</a></li>
             <li><a href="{{ url_for('projects') }}">Projects</a></li>
             <li><a href="{{ url_for('skills') }}">Skills</a></li>

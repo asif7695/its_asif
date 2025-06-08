@@ -1,10 +1,33 @@
-from flask import Flask, render_template,flash,redirect,request,url_for
+from flask import Flask, render_template, flash, redirect, request, url_for
 from flask_wtf import CSRFProtect
 from webforms import ContactForm
+from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime, date
+from flask_migrate import Migrate
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "nothing is that secret here"
 csrf = CSRFProtect(app)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///feedback.db'
+db = SQLAlchemy(app)
+migrate = Migrate(app,db)
+
+
+# feedback model 
+class Feedback(db.Model):
+    id = db.Column(db.Integer,primary_key=True)
+    name = db.Column(db.String(200),nullable=False)
+    email = db.Column(db.String(50),nullable=False)
+    message = db.Column(db.String(2000),nullable=False)
+    date = db.Column(db.DateTime, default=datetime.utcnow)
+        
+    #create a string
+    def __repr__(self):
+        return '<Name %r>' %self.name
+    
+    
 
 @app.route('/about')
 def about():
@@ -29,6 +52,9 @@ def contact():
         email = form.email.data
         message = form.message.data
         flash(f'Thank you, {name}! Your message has been received.', 'success')
+        feedback = Feedback(name = form.name.data, email = form.email.data, message = form.message.data)
+        db.session.add(feedback)
+        db.session.commit()
         return redirect(url_for('contact'))
     return render_template("contact.html", form=form)
 
