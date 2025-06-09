@@ -14,7 +14,9 @@
                 <!-- Nature -->
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="{{ url_for('static', filename='image/1.png') }}" alt="Nature Sunset" />
+                        <a href="{{ url_for('static', filename='image/1.png') }}" class="card-trigger" data-card>
+                            <img src="{{ url_for('static', filename='image/1.png') }}" alt="Nature Sunset" />
+                        </a>
                     </div>
                     <div class="gallery-content">
                         <h4>Reflection</h4>
@@ -23,7 +25,9 @@
                 <!-- Urban -->
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="{{ url_for('static', filename='image/2.png') }}" alt="Urban Street" />
+                        <a href="{{ url_for('static', filename='image/2.png') }}" class="card-trigger" data-card>
+                            <img src="{{ url_for('static', filename='image/2.png') }}" alt="Urban Street" />
+                        </a>
                     </div>
                     <div class="gallery-content">
                         <h4>Crash</h4>
@@ -32,7 +36,9 @@
                 <!-- Landscape -->
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="{{ url_for('static', filename='image/3.png') }}" alt="Mountain Landscape" />
+                        <a href="{{ url_for('static', filename='image/3.png') }}" class="card-trigger" data-card>
+                            <img src="{{ url_for('static', filename='image/3.png') }}" alt="Mountain Landscape" />
+                        </a>
                     </div>
                     <div class="gallery-content">
                         <h4>Time</h4>
@@ -41,7 +47,9 @@
                 <!-- Street Photography -->
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="{{ url_for('static', filename='image/4.jpg') }}" alt="Street Vendor" />
+                        <a href="{{ url_for('static', filename='image/4.jpg') }}" class="card-trigger" data-card>
+                            <img src="{{ url_for('static', filename='image/4.jpg') }}" alt="Street Vendor" />
+                        </a>
                     </div>
                     <div class="gallery-content">
                         <h4>Destination</h4>
@@ -50,7 +58,9 @@
                 <!-- Candid Portrait -->
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="{{ url_for('static', filename='image/5.jpg') }}" alt="Candid Portrait" />
+                        <a href="{{ url_for('static', filename='image/5.jpg') }}" class="card-trigger" data-card>
+                            <img src="{{ url_for('static', filename='image/5.jpg') }}" alt="Candid Portrait" />
+                        </a>
                     </div>
                     <div class="gallery-content">
                         <h4>Before the Storm</h4>
@@ -59,7 +69,9 @@
                 <!-- Additional Photo -->
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="{{ url_for('static', filename='image/6.jpg') }}" alt="River in Nature" />
+                        <a href="{{ url_for('static', filename='image/6.jpg') }}" class="card-trigger" data-card>
+                            <img src="{{ url_for('static', filename='image/6.jpg') }}" alt="River in Nature" />
+                        </a>
                     </div>
                     <div class="gallery-content">
                         <h4>Exit Loop</h4>
@@ -68,5 +80,14 @@
             </div>
         </div>
     </section>
+
+    <!-- Popup Card Overlay -->
+    <div id="popup-card" class="popup-card" style="display: none;">
+        <div class="card-content">
+            <span class="card-close">×</span>
+            <img src="" alt="Popup Card Image" class="card-image" />
+            <h4 class="card-title"></h4>
+        </div>
+    </div>
 
 {% endblock %}

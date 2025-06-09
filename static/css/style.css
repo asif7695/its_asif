@@ -1666,3 +1666,106 @@
                 grid-template-columns: 1fr;
             }
         }
+        /* Gallery Section Styles */
+        .gallery-section {
+            padding: 100px 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 32px;
+        }
+
+        .gallery-item {
+            border-radius: 16px;
+            overflow: hidden;
+            background-color: var(--card-bg-dark);
+            backdrop-filter: blur(var(--blur));
+            -webkit-backdrop-filter: blur(var(--blur));
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .light-mode .gallery-item {
+            background-color: var(--card-bg-light);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .gallery-image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-image img {
+            transform: scale(1.05);
+        }
+
+        .gallery-content {
+            padding: 24px;
+        }
+
+        .gallery-content h4 {
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
+        .gallery-content p {
+            margin-bottom: 16px;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        /* Lightbox Styles */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox-image {
+            max-width: 90%;
+            max-height: 90vh;
+            object-fit: contain; /* Ensures original aspect ratio and size */
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .lightbox-close:hover {
+            color: var(--primary);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            .lightbox-image {
+                max-width: 95%;
+            }
+        }
