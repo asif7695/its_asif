@@ -59,9 +59,21 @@ def contact():
     return render_template("contact.html", form=form)
 
 
-@app.route('/')
+# @app.route('/')
+# def index():
+#     return render_template("full_page.html")
+
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template("index.html")
+    form = ContactForm()
+    if form.validate_on_submit():
+        name = form.name.data
+        flash(f'Thank you, {name}! Your message has been received.', 'success')
+        feedback = Feedback(name = form.name.data, email = form.email.data, message = form.message.data)
+        db.session.add(feedback)
+        db.session.commit()       
+        return redirect(url_for('index'))
+    return render_template('full_page.html', form=form)
 
 
 @app.route('/projects')

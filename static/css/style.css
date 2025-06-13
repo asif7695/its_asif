@@ -13,7 +13,9 @@
             --card-bg-light: rgba(255, 255, 255, 0.7);
             --blur: 10px;
         }
-
+        html {
+            scroll-behavior: smooth;
+        }
         * {
             margin: 0;
             padding: 0;

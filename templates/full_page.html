@@ -1,0 +1,561 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-wrapper">
+                <!-- Your Image -->
+                <div class="hero-image">
+                    <img src="{{ url_for('static', filename='image/dp2.jpg') }}" alt="Md. Asifur Rahman Asif" class="personal-image" />
+                </div>
+                <!-- Hero Content -->
+                <div class="hero-content">
+                    <div class="hero-tagline">Computer Science & Engineering Student</div>
+                    <h1 class="hero-title">Md. Asifur Rahman Asif</h1>
+                    <p class="hero-description">
+                        💻 ML enthusiast | 💾 Data whisperer | 🛠️ App dev in progress | 🦉night owl coder by choice | Always learning, always curious 🚀              </p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Animated Element -->
+            <div class="hero-animation">
+                <div class="code-snippets">
+                    <span class="code-snippet" style="--i: 1;">print("Hello World!")</span>
+                    <span class="code-snippet" style="--i: 2;">&lt;/></span>
+                    <span class="code-snippet" style="--i: 3;">def innovate()</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shape"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-info">
+                    <p>
+                        Hello! I'm <span class="name">Asif</span>, a Computer Science & Engineering student, turning code into coffee with a passion for creating intelligent, data-driven solutions that make a difference. My tech journey began from 2024 and it's ongoing.
+                    </p>
+                    <p>
+                        I'm constantly expanding my knowledge and skills through coursework, personal projects. I thrive in environments where I can apply theoretical concepts to real-world problems. My core interests lie in Machine Learning algorithms, Natural Language Processing, and creating seamless user experiences through full-stack development.
+
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-text">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1+</div>
+                            <div class="stat-text">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-text">Contest attended</div>
+                        </div>
+                    </div><br/>
+
+                </div>
+                <div class="about-image">
+                    <img src="{{ url_for('static',filename='image/asippa.jpg')}}" alt="ASIF" >
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-python skill-icon"></i>
+                            <div class="skill-name">Python</div>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code skill-icon"></i>
+                            <div class="skill-name">C/C++</div>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java skill-icon"></i>
+                            <div class="skill-name">Java</div>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5 skill-icon"></i>
+                            <div class="skill-name">HTML</div>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-flask skill-icon"></i>
+                            <div class="skill-name">Flask</div>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database skill-icon"></i>
+                            <div class="skill-name">SQLite</div>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-linux skill-icon"></i>
+                            <div class="skill-name">Linux</div>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git skill-icon"></i>
+                            <div class="skill-name">Git</div>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="skill-item">
+                            <i class="fas fa-gamepad skill-icon"></i>
+                            <div class="skill-name">Valorant</div>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projects</h2>
+                <p>Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="{{ url_for('hangman') }}" title="View Demo"><img src="{{url_for('static',filename='image/hangman.png')}}" alt="Data Visualization Dashboard" /></a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Hangman</h3>
+                        <p>Just a beginner friendly project I did when I was first learning python</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Random Module</span>
+                            <span class="project-tag">Console Application</span>
+
+                        </div>
+                        <div class="project-links">
+                            <a href="{{ url_for('hangman') }}" title="View Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/asif7695/python_projects/blob/main/hangman.py" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="{{ url_for('hotel') }}" title="View Demo"><img src="{{url_for('static',filename='image/hotel.png')}}" alt="Data Visualization Dashboard" /></a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Hotel Management</h3>
+                        <p>I and some of my classmate were tasked to made this project as our L-1T2 final project.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">C/C++</span>
+                            <span class="project-tag">Linked Lists</span>
+                            <span class="project-tag">File I/O</span>
+                            <span class="project-tag">Console Application</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="{{ url_for('hotel') }}" title="View Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/asif7695/c-c-projects" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="{{ url_for('blog_p') }}" title="View Demo"><img src="{{ url_for('static',filename='image/blog.png')}}" alt="Data Visualization Dashboard" /></a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Blog Site</h3>
+                        <p>A flask based web application by which was my first full-stack project.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">SQLite</span>
+                            <span class="project-tag">Jinja2</span>
+                            <span class="project-tag">WTForms</span>
+                            <span class="project-tag">SQLAlchemy</span>
+                            <span class="project-tag">Bootstrap</span>
+                            <span class="project-tag">CKEditor</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="{{ url_for('blog_p') }}" title="View Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/asif7695/flask_try2" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="{{ url_for('telebot')}}" title="View Demo"><img src="{{url_for('static',filename='image/telebot.png')}}" alt="Telebot" /></a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Pookie Bot</h3>
+                        <p>I was bored and got curious how telegram bot work, so I made this simple telegram bot.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Telegram</span>
+                            <span class="project-tag">Python-dotenv</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="{{ url_for('telebot')}}" title="View Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/asif7695/python_projects/blob/main/telegram_bot/telegram_bot.py" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+
+        </div>
+                        <p>Sorry for showing you these lame projects. But when I'll have better projects, I'll remove these.</p>
+
+    </section>
+
+
+
+
+    <!-- Personal Section -->
+    <section id="personal" class="personal-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Personal Corner</h2>
+                <p>A glimpse into my hobbies, passions, and inspirations</p>
+            </div>
+
+            <!-- Favorite Quotes -->
+            <div class="quotes-section">
+                <h3>Favorite Quotes</h3>
+                <div class="quotes-grid">
+                    <div class="quote-card">
+                        <p class="quote-text">“If you don't take risks, you can't create a future.” –Monkey D. Luffy</p>
+                        <p class="quote-source">One Piece</p>
+                    </div>
+                    <div class="quote-card">
+                        <p class="quote-text">"Your Pain Defines Who You Are, But It No Longer Holds Power Over You." –Noah</p>
+                        <p class="quote-source">Dark</p>
+                    </div>
+                    <div class="quote-card">
+                        <p class="quote-text">"A Man Can Do What He Wills, But He Cannot Will What He Wills." –Arthur Schopenhauer</p>
+                        <p class="quote-source">German philosopher</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hobbies and Personal Projects -->
+            <div class="hobbies-section">
+                <h3>My Hobbies & Personal Projects</h3>
+                <div class="hobbies-grid">
+                    <!-- Photography -->
+                    <div class="hobby-card">
+                        <div class="hobby-image">
+                            <img src="{{ url_for('static', filename='image/3.png') }}" alt="Photography Sample" />
+                        </div>
+                        <div class="hobby-content">
+                            <h4>Photography</h4>
+                            <p>I love capturing moments in nature and urban settings. My favorite subjects include landscapes, street photography, and candid portraits.</p>
+                            <a href="{{ url_for('photography')}}" class="btn btn-outline">View Gallery</a>
+                        </div>
+                    </div>
+
+                    <!-- Gaming (Valorant) -->
+                    <div class="hobby-card">
+                        <div class="hobby-image">
+                            <img src="{{ url_for('static', filename='image/valorant.jpg') }}" alt="Valorant Sample" />
+                        </div>
+                        <div class="hobby-content">
+                            <h4>Gaming: Valorant</h4>
+                            <p>I enjoy competitive gaming, especially Valorant. I’m always working on improving my aim and strategy.</p>
+                            <a href="{{ url_for('highlights')}}" class="btn btn-outline">View Highlights</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anime List Details (Expanded Section) -->
+            <div id="anime-list" class="anime-list-section">
+                <h3>My Top Favorite Picks</h3>
+                <div class="anime-grid">
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="{{ url_for('static', filename='image/one_piece.avif') }}" alt="Spirited Away" />
+                        </div>
+                        <div class="anime-content">
+                            <h4>One Piece</h4>
+                            <p>Rubber-bodied dreamer Monkey D. Luffy gathers an eclectic pirate crew and braves the perilous Grand Line, battling tyrants and monsters to claim the legendary "One Piece" and become King of the Pirates.</p>
+                        </div>
+                    </div>
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="{{ url_for('static', filename='image/attack.jpg') }}" alt="Attack on Titan" />
+                        </div>
+                        <div class="anime-content">
+                            <h4>Attack on Titan</h4>
+                            <p>An intense story with complex characters and epic battles. The plot twists keep me hooked.</p>
+                        </div>
+                    </div>
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="{{ url_for('static', filename='image/dark.jpeg') }}" alt="Demon Slayer" />
+                        </div>
+                        <div class="anime-content">
+                            <h4>Dark</h4>
+                            <p>A family saga with a supernatural twist, set in a German town where the disappearance of two young children exposes the relationships among four families.</p>
+                        </div>
+                    </div>
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="{{ url_for('static', filename='image/intersteller.jpg') }}" alt="Demon Slayer" />
+                        </div>
+                        <div class="anime-content">
+                            <h4>Interstellar</h4>
+                            <p>When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.</p>
+                        </div>
+                    </div>
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="{{ url_for('static', filename='image/bad.jpeg') }}" alt="Demon Slayer" />
+                        </div>
+                        <div class="anime-content">
+                            <h4>Breaking Bad</h4>
+                            <p>A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student to secure his family's future.</p>
+                        </div>
+                    </div>
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="{{ url_for('static', filename='image/john.avif') }}" alt="Demon Slayer" />
+                        </div>
+                        <div class="anime-content">
+                            <h4>John Wick</h4>
+                            <p>John Wick is a former hitman grieving the loss of his true love. When his home is broken into, robbed, and his dog killed, he is forced to return to action to exact revenge.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Resume</h2>
+                <p>My educational journey and professional experience</p>
+            </div>
+
+            <div class="resume-wrapper">
+                <!-- Educational Background (Left) -->
+                <div class="education-timeline">
+                    <h3>Educational Background</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024 - Present</div>
+                            <div class="timeline-content">
+                                <h4>Bachelor of Science</h4>
+                                <p>Daffodil International University, Dhaka, Bangladesh</p>
+                                <p>CGPA: N/A /4.0 | Computer Science & Engineering </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2020 - 2022</div>
+                            <div class="timeline-content">
+                                <h4>Higher Secondary Certificate (HSC)</h4>
+                                <p>Govt. Bangabandhu College, Khulna, Bangladesh</p>
+                                <p>GPA: 5.0/5.0 | Science Group</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2019 - 2020</div>
+                            <div class="timeline-content">
+                                <h4>Secondary School Certificate (SSC)</h4>
+                                <p>Khulna Zilla School, Khulna, Bangladesh</p>
+                                <p>GPA: 5.0/5.0 | Science Group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Background (Lower Right) -->
+                <div class="professional-timeline">
+                    <h3>Professional Experience</h3>
+                    <!--
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">June 2023 - Present</div>
+                            <div class="timeline-content">
+                                <h4>Junior Software Developer</h4>
+                                <p>Tech Innovations Ltd., Dhaka, Bangladesh</p>
+                                <p>Developed and maintained web applications using Flask and C. Contributed to a team project managing hotel room systems.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Jan 2023 - May 2023</div>
+                            <div class="timeline-content">
+                                <h4>Intern - Software Development</h4>
+                                <p>XAI Solutions, Remote</p>
+                                <p>Assisted in building a prototype for a chatbot system using Python, gaining experience with APIs and asynchronous programming.</p>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <p>Let's connect and discuss your ideas</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:asif@example.com">asifur.8055@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p><a href="https://www.google.com/maps/place/Younus+Khan+Scholar's+Garden+1,Block+A,+DIU/@23.8944745,90.3278905,13.7z/data=!4m15!1m8!3m7!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!2sDhaka!3b1!8m2!3d23.804093!4d90.4152376!16zL20vMGZuYjQ!3m5!1s0x3755c23be3037b03:0xa20a6bf223986cd4!8m2!3d23.875776!4d90.3238796!16s%2Fg%2F11c1p506pg?entry=ttu&g_ep=EgoyMDI1MDYwMi4wIKXMDSoASAFQAw%3D%3D">Dhaka, Bangladesh</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+1234567890">+8801XXXXXXXXX</a></p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/md.asifur.rahmanasif.92/" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/asif.zip/" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://discord.com/users/asif7695" class="social-link" title="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://github.com/asif7695" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/md-asifur-rahman-asif/" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Feedback</h3>
+                        {% with messages = get_flashed_messages(with_categories=true) %}
+                            {% if messages %}
+                                {% for category, message in messages %}
+                                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        {% endwith %}
+                    <form method="POST" action="">
+                        {{ form.hidden_tag() }}
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            {{ form.name(class="form-control", placeholder="Your Name") }}
+                            {% for error in form.name.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            {{ form.email(class="form-control", placeholder="Your Email") }}
+                            {% for error in form.email.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            {{ form.message(class="form-control", placeholder="Your Feedback") }}
+                            {% for error in form.message.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                        {{ form.submit(class="btn btn-primary") }}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+{% endblock %}
